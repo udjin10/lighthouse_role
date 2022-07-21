@@ -1,3 +1,7 @@
 ---
+
 - name: reload-nginx
-  command: systemctl reload nginx
+  ansible.builtin.systemd:
+    daemon_reload: true
+    state: reloaded
+    enabled: true

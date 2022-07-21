@@ -6,11 +6,6 @@
     state: latest
     update_cache: yes
 
-- name: NGINX | start
-  apt:
-    name: nginx
-    state: started
-
 - name: NGINX | Create general config
   template:
     src: templates/nginx.conf.j2
