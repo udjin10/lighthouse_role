@@ -1,1 +1,1 @@
-role_lighthouse
+role_lighthouse 1.0.1
