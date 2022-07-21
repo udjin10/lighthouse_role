@@ -2,6 +2,7 @@
 
 - name: reload-nginx
   ansible.builtin.systemd:
+    name: nginx
     daemon_reload: true
     state: reloaded
     enabled: true
