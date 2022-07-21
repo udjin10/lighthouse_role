@@ -1,20 +1,11 @@
 galaxy_info:
   author: udjin10
-  description: Role installs Lighthouse apt
   company: Netology
-  role_name: lighthouse_role
-
-  license: MIT
-
-  min_ansible_version: "2.9"
-
+  description: lighthouse_role
+  min_ansible_version: 2.9.*
+  license: free
   platforms:
-    - name: Ubuntu
+    - name: Debian
       versions:
-      - bionic
-
-  galaxy_tags:
-    - lighthouse
-    - nginx 
-
-dependencies: []
+        - stretch
+        - buster
